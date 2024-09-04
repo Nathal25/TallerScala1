@@ -7,7 +7,8 @@ mcdTFA(List(4,0,1),List(2,0,1),List(2,3,5)) //mcd(180,
 //pruebas mcdEBez
 mcdEB(963,657)
 //Pruebas fibonacciA
-
+fibonacciA(5)
+fibonacciA(10)
 //pruebas fibonacciI
 fibonacciI(5)
 fibonacciI(10)

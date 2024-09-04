@@ -50,7 +50,11 @@ package object FuncionesRecursivas {
    * Ejercicio 1.2.1
    * fibonacci recursivo de arbol
    */
-
+  def fibonacciA(n: Int): Int = {
+    if (n <= 0) 1
+    else if (n == 1) 1
+    else fibonacciA(n - 1) + fibonacciA(n - 2)
+  }
   /**
    * Ejercicio 1.2.2
    * fibonacci iterativo
