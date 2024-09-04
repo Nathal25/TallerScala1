@@ -31,12 +31,12 @@ package object FuncionesRecursivas {
    * maximo comun divisor a partir del teorema de Euclides con coeficientes de Bezout
    */
   
-  def mcdEB(n: Int, m: Int): (Int, Int, Int) = {
+  def mcdEBez(n: Int, m: Int): (Int, Int, Int) = {
     if (m==0) {
       //caso base
       (n,1,0)
     } else {
-      val (d,x1,y1) = mcdEB(m,n%m)
+      val (d,x1,y1) = mcdEBez(m,n%m)
 
       val x=y1
       val y=x1-(n/m)*y1
